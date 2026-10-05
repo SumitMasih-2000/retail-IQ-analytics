@@ -76,14 +76,7 @@ with st.sidebar:
         st.image("logo.png", width=90)
     except Exception:
         st.image("https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-analytics-marketing-flatart-icons-flat-flatarticons.png", width=70)
-        with st.sidebar:
-    try:
-        st.image("logo.png", width=90)
-    except Exception:
-        st.image("https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-analytics-marketing-flatart-icons-flat-flatarticons.png", width=70)
         
     st.markdown("## **Retail Intelligence**")
     st.caption("v2.9.0 • Custom Branding")
-    
-    # Cleaned single-line divider (No multi-line quotes)
     st.markdown("
