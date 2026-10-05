@@ -7,16 +7,16 @@ import plotly.express as px
 # 1. APPLICATION ARCHITECTURE & THEME (MINT ENTERPRISE LUX)
 # ==============================================================================
 st.set_page_config(
-    page_title="Retail Intelligence Suite", 
-    page_icon="📊", 
+    page_title="Retail Intelligence Suite",
+    page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Custom Unified Style Sheets + Material Icon CDN Injection
 st.markdown("""
-    
-    
+
+
 """, unsafe_allow_html=True)
 
 # ==============================================================================
@@ -36,7 +36,7 @@ COORDINATE_REGISTRY = {
 def init_db():
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
-    cursor.execute('''
+    cursor.execute("""
         CREATE TABLE IF NOT EXISTS sales (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             date TEXT,
@@ -47,7 +47,7 @@ def init_db():
             total_revenue REAL,
             store_location TEXT
         )
-    ''')
+    """)
     conn.commit()
     conn.close()
 
